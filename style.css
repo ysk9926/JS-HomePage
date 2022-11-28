@@ -1,11 +1,4 @@
-body{
-    background-color: aquamarine;
-}
-
-.size_1 {
-    background-color: blanchedalmond;
-}
-
-.size_2 {
-    background-color: aqua;
-}
+.hidden {
+    display: none;
+  }
+  
