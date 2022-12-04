@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello js</title>
+  <link rel="stylesheet" href="css/userName.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Time Until Christmas Eve</h1>
-  <h2 class="js-clock"></h2>
-  <script src="main.js"></script>
+  <div class="weather">
+    <span></span>
+    <span></span>
+  </div>
+    <span class="clock"></span>
+    <div class="sayhello"> 
+  <form class="login hidden">
+    <input class="login_input" type="text" required placeholder="이름을 써주세요" maxlength="5"/>
+    <input type="submit" value="LogIn"/>
+  </form>
+  <h2 class="hidden greeting"></h2>
+  </div>
+  <div class="todo">
+    <form class="todo_list">
+      <input class="todo_input" type=" text" placeholder="할일을 적어주세요">
+    </form>
+    <ul class="todo_list_ul">
+    </ul>
+  </div>
+
+  <script src="js/bg.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/userName.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/weather.js"></script>
 </body>
 </html>
