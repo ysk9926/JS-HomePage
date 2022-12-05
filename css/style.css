@@ -16,8 +16,6 @@ body {
     color: whitesmoke;
     border-bottom: 5px solid white;
     padding-bottom: 0px;
-    
-    
 }
 
 .login input{
@@ -43,14 +41,18 @@ body {
 }
 
 .sayhello {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    position: absolute;
+    left: 30%;
+    text-align: center;
+    color: rgb(255, 255, 255);
     font-size: 35px;
-
+    width: 40%;
 }
 
+.greeting {
+    height: 140px;
+    margin: 0px;
+}
 
 .todo {
     position: absolute;
