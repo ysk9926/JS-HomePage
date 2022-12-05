@@ -25,6 +25,15 @@ body {
     padding: 5px 10px;
     background: rgba(255, 255, 255, 0);
     border-bottom: 3px solid white;
+    color: white;
+    transition: 0.5s;
+    text-align: center;
+    font-size: 35px;
+    width: 350px;
+}
+
+.login input:focus{
+    border-color: yellowgreen;
 }
 
 .login input:focus {
