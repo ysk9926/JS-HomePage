@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Open+Sans:wght@400;600&display=swap');
+
 body {
+    font-family: 'Do Hyeon', sans-serif;
     margin: 0;
 }
 
@@ -6,19 +9,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 400px;
+    padding-top: 500px;
     margin-left: 500px;
     margin-right: 500px;
     font-size: 100px;
     color: whitesmoke;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     border-bottom: 5px solid white;
+    padding-bottom: 0px;
     
     
 }
 
 .login input{
-    margin-top: 15px;
     border: none;
     padding: 5px 10px;
     background: rgba(255, 255, 255, 0);
@@ -32,18 +34,14 @@ body {
 }
 
 .sayhello {
-    margin-top: 20px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-}
-
-.sayhello span {
-    font-size: 30px;
+    font-size: 35px;
 
 }
+
 
 .todo {
     position: absolute;
@@ -51,43 +49,64 @@ body {
     right: 20px;
 }
 
-.todo_input {
-    width: 200px;
-    padding-top: 5px;
+.todo_input input {
+    padding: 7px 5px;
     border: none;
-    text-align: center;
     border-radius: 15px;
-    background:rgba(255, 255, 255, 0.692) ;
-
-
-}
-.todo_input::placeholder{
-    color: black;
-
-}
-
-
-.todo_input:focus {
+    color: white;
+    border: 3px solid white;
+    background:none;
     outline: none;
+}
+.todo_input span{
+    color: white;
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 6px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.todo_input input:valid ~ span,
+.todo_input input:focus ~ span
+ {
+    color:darkslategrey;
+    transform: translateX(3px) translateY(-13px);
+    border-left: 3px solid darkslategrey;
+    border-right: 3px solid darkslategrey;
+    font-size: 13px;
+    background-color: rgba(255, 255, 255, 0.918);
+    border-radius: 4px;
 }
 
 .todo_list_ul {
     margin-top: 5px;
-    padding-left: 10px;
+    padding-left: 0px;
     padding-top: 3px;
     padding-bottom: 5px;
     list-style: none;
     border-radius: 15px;
-    background:rgba(255, 255, 255, 0.692) ;
+    background:rgba(255, 255, 255, 0) ;
     
     
 }
 
 .todo_list_ul li {
+    color: white;
     display: flex;
     justify-content: space-between;
-    padding-top: 3px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    background:rgba(255, 255, 255, 0.205);
+    border-radius: 10px;
+    padding-right: 30px;
 }
 
 .todo_list_ul button {
@@ -96,15 +115,15 @@ body {
     height: 15px;
     right: 15px;
     border: none;
-    background:rgba(209, 209, 209, 0.001) ; 
-
+    background:none; 
+    
     
 }
 .weather {
     list-style: none;
     position: absolute;
     top: 20px;
-    right: 50px;
+    right: 40px;
     padding-right: 15px;
     padding-bottom: 10px;
     color: aliceblue;
@@ -124,7 +143,6 @@ body {
     right:0px;
     bottom:0px;
     z-index: -1;
-    opacity:80%;
 }
 
 .quote {
