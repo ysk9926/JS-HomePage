@@ -9,15 +9,21 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="weather">
-    <span></span>
-    <span></span>
-  </div>
+  <header>
+    <ul class="weather">
+      <li>
+        <span></span>
+      </li>
+      <li>
+        <span></span>
+      </li>
+    </ul>
+  </header>
     <span class="clock"></span>
     <div class="sayhello"> 
   <form class="login hidden">
-    <input class="login_input" type="text" required placeholder="이름을 써주세요" maxlength="5"/>
-    <input type="submit" value="LogIn"/>
+    <span>Write your name</span>
+    <input class="login_input" type="text"maxlength="5"/>
   </form>
   <h2 class="hidden greeting"></h2>
   </div>
@@ -28,7 +34,12 @@
     <ul class="todo_list_ul">
     </ul>
   </div>
+    <div class="quote">
+      <span></span>
+      <span></span>
+    </div>
 
+  <script src="js/quotes.js"></script>
   <script src="js/bg.js"></script>
   <script src="js/todo.js"></script>
   <script src="js/userName.js"></script>

@@ -20,35 +20,44 @@ body {
 .login input{
     margin-top: 15px;
     border: none;
-    border-radius: 5px;
     padding: 5px 10px;
-    text-align: center;
+    background: rgba(255, 255, 255, 0);
+    border-bottom: 3px solid white;
 }
 
 .login input:focus {
     outline: none;
+
+    
 }
 
 .sayhello {
+    margin-top: 20px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+}
+
+.sayhello span {
+    font-size: 30px;
+
 }
 
 .todo {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 5px;
+    right: 20px;
 }
 
 .todo_input {
     width: 200px;
     padding-top: 5px;
-    padding-bottom: 5px;
     border: none;
     text-align: center;
     border-radius: 15px;
-    background:rgba(209, 209, 209, 0.692) ;
+    background:rgba(255, 255, 255, 0.692) ;
 
 
 }
@@ -69,7 +78,7 @@ body {
     padding-bottom: 5px;
     list-style: none;
     border-radius: 15px;
-    background:rgba(209, 209, 209, 0.692) ;
+    background:rgba(255, 255, 255, 0.692) ;
     
     
 }
@@ -78,11 +87,11 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 3px;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .todo_list_ul button {
-    position: fixed;
+    position: absolute;
     width: 15px;
     height: 15px;
     right: 15px;
@@ -92,11 +101,18 @@ body {
     
 }
 .weather {
+    list-style: none;
     position: absolute;
-    bottom: 0;
-    padding-left: 5px;
+    top: 20px;
+    right: 50px;
+    padding-right: 15px;
     padding-bottom: 10px;
     color: aliceblue;
+}
+
+.weather img {
+    position: absolute;
+    bottom: 20px
 }
 
 .bgImg{
@@ -109,4 +125,16 @@ body {
     bottom:0px;
     z-index: -1;
     opacity:80%;
+}
+
+.quote {
+    color: white;
+    width: 80%;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
 }
